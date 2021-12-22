@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+}
+
+
+
+.carousel{
+
+    &__generalWrapper{
+        position: relative;
+    }
+
+    &__wrapper{
+        margin: 100px auto;
+        background-color: rgb(37, 37, 37);
+        height: 200px;
+        width: 300px;
+        display: flex;
+        //overflow: hidden;
+    }
+
+
+    &__single{
+        height: 100%;
+        width: 100px;
+        flex-shrink: 0;
+        //transform: translateX(-100%);
+        
+        &:nth-child(1){
+            background-color: rgb(148, 53, 53);
+        }
+        &:nth-child(2){
+            background-color: rgb(53, 148, 58);
+        }
+        &:nth-child(3){
+            background-color: rgb(53, 105, 148);
+        }
+        &:nth-child(4){
+            background-color: rgb(156, 175, 48);
+        }
+        &:nth-child(5){
+            background-color: rgb(106, 37, 172);
+        }
+    }
+
+    &__btnNavigation{
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+
+        &--prev{
+            left: 100px;
+        }
+        &--next{
+            right: 100px;
+        }
+    }
+
+}
