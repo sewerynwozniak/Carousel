@@ -6,11 +6,11 @@
 
 .carousel{
 
-    &__generalWrapper{
+    &__wrapper{
         position: relative;
     }
 
-    &__wrapper{
+    &__singleWrapper{
         margin: 100px auto;
         background-color: rgb(37, 37, 37);
         height: 200px;
@@ -24,23 +24,23 @@
         height: 100%;
         width: 100px;
         flex-shrink: 0;
-        //transform: translateX(-100%);
+        transition: 0.3s all;
         
-        &:nth-child(1){
-            background-color: rgb(148, 53, 53);
-        }
-        &:nth-child(2){
-            background-color: rgb(53, 148, 58);
-        }
-        &:nth-child(3){
-            background-color: rgb(53, 105, 148);
-        }
-        &:nth-child(4){
-            background-color: rgb(156, 175, 48);
-        }
-        &:nth-child(5){
-            background-color: rgb(106, 37, 172);
-        }
+       &--1{
+           background-color: rgb(197, 24, 24);
+       }
+       &--2{
+           background-color: rgb(24, 93, 197);
+       }
+       &--3{
+           background-color: rgb(30, 197, 24);
+       }
+       &--4{
+           background-color: rgb(219, 206, 24);
+       }
+       &--5{
+           background-color: rgb(125, 24, 219);
+       }
     }
 
     &__btnNavigation{
